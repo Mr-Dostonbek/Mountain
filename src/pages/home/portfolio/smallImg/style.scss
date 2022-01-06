@@ -7,7 +7,7 @@
         transform: scale(1.1);
     }
     .portfolio_img_small{
-        max-width: 100%;
+        width: 100%;
         overflow: hidden;
         transition: all 0.3s linear;
     }
@@ -47,6 +47,27 @@
             p{
                 color: rgba(255, 255, 255, 0.6);
             }
+
+            @media only screen and (max-width: 768px) {
+                h1{
+                    font-size: 16px;
+                }
+                p{
+                    font-size: 13px;
+                }
+            }
+
+            @media only screen and (max-width: 640px) {
+                h1{
+                    font-size: 16px;
+                    line-height: 0.7rem;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+
+            
         }
     }
 }

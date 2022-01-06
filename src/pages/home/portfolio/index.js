@@ -20,7 +20,7 @@ const Portfolio = () => {
 
                     <BigImg img={'./assets/img/row-1-big.png'} title={'Avida shifoxonasi ⟶'} text={'Logotip'} />
 
-                    <div className='col-12 col-md-6'>
+                    <div className='col-12 col-lg-6'>
                         <div className='row'>
                             <SmallImg img={'./assets/img/row-1-1.png'} title={'Baf ⟶'} text={'Logotip'} />
                             <SmallImg img={'./assets/img/row-1-2.png'} title={'OMON MEAT ⟶'} text={'Logotip'} />
@@ -33,7 +33,7 @@ const Portfolio = () => {
 
                 <div className='row'>
 
-                    <div className='col-12 col-md-6'>
+                    <div className='col-12 col-lg-6'>
                         <div className='row'>
                             <SmallImg img={'./assets/img/row-2-1.png'} title={'Krumchiki ⟶'} text={'Qadoq dizayn'} />
                             <SmallImg img={'./assets/img/row-2-2.png'} title={'Mezzi ⟶'} text={'Qadoq dizayn'} />
@@ -50,7 +50,7 @@ const Portfolio = () => {
 
                     <BigImg img={'./assets/img/row-3-big.png'} title={'Elmart ⟶'} text={'Logotip'} />
 
-                    <div className='col-12 col-md-6'>
+                    <div className='col-12 col-lg-6'>
                         <div className='row'>
                             <SmallImg img={'./assets/img/row-3-1.png'} title={'Winner ⟶'} text={'Logotip'} />
                             <SmallImg img={'./assets/img/row-3-2.png'} title={'Hediye ⟶'} text={'Logotip'} />

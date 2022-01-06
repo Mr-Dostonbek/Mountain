@@ -3,7 +3,7 @@ import './style.scss';
 
 const BigImg = ({ img, title, text }) => {
     return (
-        <div className='col-12 col-md-6 mb-4 mb-md-0'>
+        <div className='col-12 col-lg-6 mb-4 mb-lg-0'>
             <div className='big_img'>
                 <img className='portfolio_img_big' src={img} alt='image' />
                 <div className='portfolio_content_big'>

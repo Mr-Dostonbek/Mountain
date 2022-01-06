@@ -7,6 +7,7 @@
         transform: scale(1.1);
     }
     .portfolio_img_big{
+        width: 100%;
         transition: all 0.3s linear;
         max-width: 100%;
         overflow: hidden;
@@ -47,6 +48,15 @@
             p{
                 color: rgba(255, 255, 255, 0.6);
             }
+            @media only screen and (max-width: 640px) {
+                h1{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
         }
     }
 }
+

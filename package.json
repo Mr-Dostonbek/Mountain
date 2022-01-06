@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -16,6 +17,7 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "react-scroll-percentage": "^4.2.0",
+    "react-tabs": "^3.2.3",
     "react-visibility-sensor": "^5.1.1",
     "reactstrap": "^9.0.1",
     "sass": "^1.45.2",
