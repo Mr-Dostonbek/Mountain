@@ -5,7 +5,7 @@ import './style.scss';
 const Counter = () => {
     return (
         <div className='counter'>
-            <div className='counter-container'>
+            <div className='main-container'>
                 <div className='row'>
                     <div className='col text-center mb-4'>
                         <h1>Ko'rsatkichlar</h1>

@@ -1,9 +1,10 @@
 import React from 'react';
+import FullWidthTabs from './blogItem';
 
 const Blog = () => {
     return (
         <div>
-            <h1>Blog</h1>
+            <FullWidthTabs />
         </div>
     );
 }

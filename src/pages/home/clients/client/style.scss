@@ -1,0 +1,21 @@
+.clients_section{
+    max-width: 100%;
+    background-color: #F7F7F7;
+    .main-container{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    h1{
+        padding: 0 0 24px;
+        font-size: 40px;
+        color: #04165D;
+        text-align: center;
+        font-weight: 600;
+    }
+}
+.client{
+    width: 100%;
+    .client_img{
+        width: 100%;
+    }
+}

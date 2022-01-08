@@ -1,0 +1,48 @@
+.css-hip9hq-MuiPaper-root-MuiAppBar-root{
+    box-shadow: none !important;
+    background-color: #F7F7F7 !important;
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+.MuiTabs-indicator{
+    background-color: #FDC619 !important;
+}
+.MuiButtonBase-root{
+    font-weight: 600 !important;
+}
+.MuiTab-textColorInherit{
+    color: #04165D !important;
+}
+
+.services_tabs{
+    background-color: #F7F7F7;
+}
+
+.services_item{
+    // padding: 70px 30px;
+    h1{
+        font-size: 40px;
+        color: #04165D;
+        font-weight: 600;
+    }
+    .title_line{
+        margin-top: 30px;
+        img{
+            max-width: 100%;
+        }
+    }
+    p{
+        margin: 20px 0;
+        color: #666666;
+        font-size: 16px;
+        max-width: 380px;
+    }
+    .btn-services-btn{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        color: #04165D;
+        background-color: #E8E9ED;
+        padding: 10px 20px;
+        margin-top: 30px;
+    }
+}

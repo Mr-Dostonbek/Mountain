@@ -8,11 +8,6 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import './style.scss';
-import ServicesItem1 from './servicesItem1';
-import ServicesItem2 from './servicesItem2';
-import ServicesItem3 from './servicesItem3';
-import ServicesItem4 from './servicesItem4';
-import ServicesItem5 from './servicesItem5';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;

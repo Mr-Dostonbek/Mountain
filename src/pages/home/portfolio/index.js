@@ -6,11 +6,12 @@ import SmallImg from './smallImg';
 import Button from '../main/button'
 
 const Portfolio = () => {
+    
     return (
         <div className='portfolio_section'>
-            <div className='portfolio_section_container'>
+            <div className='main-container'>
 
-                <div className='row'>
+                <div className='row portfolio-title'>
                     <div className='col text-center m-4'>
                         <h1>Portfolio</h1>
                     </div>

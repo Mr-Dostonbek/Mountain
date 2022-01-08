@@ -8,12 +8,21 @@ import Blog from "./pages/blog";
 import Contact from "./pages/contact";
 import Footer from "./pages/footer";
 import Home from "./pages/home";
-import "./styles/main.scss"
+import "./styles/main.scss";
+import './App.css'
 
 function App() {
-  
+
+  window.onload = function () {
+    const el = document.getElementById('overlay');
+    el.style.display = 'none';
+  };
+
   return (
     <BrowserRouter>
+      <div id="overlay">
+        <img id="overlay-img" src="./assets/img/logo.png" alt="logo" />
+      </div>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
