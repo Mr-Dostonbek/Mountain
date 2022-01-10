@@ -12,6 +12,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import BlogItem from './blogItem';
 import Blognot from './blogItem/blogNot';
+import Contact from '../home/contact';
 
 const data = [
     {
@@ -226,171 +227,170 @@ export default function Blog() {
     AOS.init();
 
     return (
-        <div className='blog_tabs'>
-            <div class="main-container">
-                <div className='blog-title'>
-                    <h1>Blog</h1>
-                    <ul>
-                        <li>302 ta loyiha</li>
-                        <li>212 ta rozi mijoz</li>
-                    </ul>
-                </div>
-                <Box sx={{ bgcolor: '#F7F7F7', width: '100%' }}>
-                    <AppBar position="static">
-                        <Tabs
-                            data-aos="fade-right" data-aos-duration="2000"
-                            value={value}
-                            onChange={handleChange}
-                            indicatorColor="secondary"
-                            textColor="inherit"
-                            variant="fullWidth"
-                            aria-label="full width tabs example"
+        <div>
+            <div className='blog_tabs'>
+                <div class="main-container">
+                    <div className='blog-title'>
+                        <h1>Blog</h1>
+                        <ul>
+                            <li>302 ta loyiha</li>
+                            <li>212 ta rozi mijoz</li>
+                        </ul>
+                    </div>
+                    <Box sx={{ bgcolor: '#F7F7F7', width: '100%' }}>
+                        <AppBar position="static">
+                            <Tabs
+                                data-aos="fade-right" data-aos-duration="2000"
+                                value={value}
+                                onChange={handleChange}
+                                indicatorColor="secondary"
+                                textColor="inherit"
+                                variant="fullWidth"
+                                aria-label="full width tabs example"
+                            >
+                                <Tab label="Barchasi" {...a11yProps(0)} />
+                                <Tab label="Sotuv" {...a11yProps(1)} />
+                                <Tab label="Marketing" {...a11yProps(2)} />
+                                <Tab label="Brending" {...a11yProps(3)} />
+                                <Tab label="IT" {...a11yProps(4)} />
+                                <Tab label="Menejment" {...a11yProps(5)} />
+                                <Tab label="Boshqalar" {...a11yProps(6)} />
+                            </Tabs>
+                        </AppBar>
+                        <SwipeableViews
+                            axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
+                            index={value}
+                            onChangeIndex={handleChangeIndex}
                         >
-                            <Tab label="Barchasi" {...a11yProps(0)} />
-                            <Tab label="Sotuv" {...a11yProps(1)} />
-                            <Tab label="Marketing" {...a11yProps(2)} />
-                            <Tab label="Brending" {...a11yProps(3)} />
-                            <Tab label="IT" {...a11yProps(4)} />
-                            <Tab label="Menejment" {...a11yProps(5)} />
-                            <Tab label="Boshqalar" {...a11yProps(6)} />
-                        </Tabs>
-                    </AppBar>
-                    <SwipeableViews
-                        axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-                        index={value}
-                        onChangeIndex={handleChangeIndex}
-                    >
-                        <TabPanel value={value} index={0} dir={theme.direction}>
-                            <div className='row'>
-                                {
-                                    data.map((item) => {
-                                        return (
-                                            <BlogItem
-                                                img={item.img}
-                                                title={item.title}
-                                                videoURL={item.videoURL}
-                                                videoTime={item.videoTime}
-                                            />
-                                        )
-                                    })
-                                }
-                            </div>
-                        </TabPanel>
-                        <TabPanel value={value} index={1} dir={theme.direction}>
-                            <div className='row'>
-                                {
-                                    data.some(item => item.category === "sotuv")
-                                        ? data.filter(item => item.category === "sotuv").map((sotuv, index) => {
+                            <TabPanel value={value} index={0} dir={theme.direction}>
+                                <div className='row'>
+                                    {
+                                        data.map((item) => {
                                             return (
                                                 <BlogItem
-                                                    img={sotuv.img}
-                                                    title={sotuv.title}
-                                                    videoURL={sotuv.videoURL}
-                                                    videoTime={sotuv.videoTime}
+                                                    img={item.img}
+                                                    title={item.title}
+                                                    videoURL={item.videoURL}
+                                                    videoTime={item.videoTime}
                                                 />
                                             )
                                         })
-                                        : <Blognot />
-                                }
-                            </div>
-                        </TabPanel>
-                        <TabPanel value={value} index={2} dir={theme.direction}>
-                            <div className='row'>
-                                {
-                                    data.some(item => item.category === "marketing")
-                                        ? data.filter(item => item.category === "marketing").map((sotuv, index) => {
-                                            return (
-                                                <BlogItem
-                                                    img={sotuv.img}
-                                                    title={sotuv.title}
-                                                    videoURL={sotuv.videoURL}
-                                                    videoTime={sotuv.videoTime}
-                                                />
-                                            )
-                                        })
-                                        : <Blognot />
-                                }
-                            </div>
-                        </TabPanel>
-                        <TabPanel value={value} index={3} dir={theme.direction}>
-                            <div class="row">
-                                {
-                                    data.some(item => item.category === "brending")
-                                        ? data.filter(item => item.category === "brending").map((sotuv, index) => {
-                                            return (
-                                                <BlogItem
-                                                    img={sotuv.img}
-                                                    title={sotuv.title}
-                                                    videoURL={sotuv.videoURL}
-                                                    videoTime={sotuv.videoTime}
-                                                />
-                                            )
-                                        })
-                                        : <Blognot />
-                                }
-                            </div>
-
-                        </TabPanel>
-                        <TabPanel value={value} index={4} dir={theme.direction}>
-                            <div class="row">
-                                {
-                                    data.some(item => item.category === "it")
-                                        ? data.filter(item => item.category === "it").map((sotuv, index) => {
-                                            return (
-                                                <BlogItem
-                                                    img={sotuv.img}
-                                                    title={sotuv.title}
-                                                    videoURL={sotuv.videoURL}
-                                                    videoTime={sotuv.videoTime}
-                                                />
-                                            )
-                                        })
-                                        : <Blognot />
-                                }
-                            </div>
-
-                        </TabPanel>
-                        <TabPanel value={value} index={5} dir={theme.direction}>
-                            <div class="row">
-                                {
-                                    data.some(item => item.category === "menejment")
-                                        ? data.filter(item => item.category === "menejment").map((sotuv, index) => {
-                                            return (
-                                                <BlogItem
-                                                    img={sotuv.img}
-                                                    title={sotuv.title}
-                                                    videoURL={sotuv.videoURL}
-                                                    videoTime={sotuv.videoTime}
-                                                />
-                                            )
-                                        })
-                                        : <Blognot />
-                                }
-                            </div>
-
-                        </TabPanel>
-                        <TabPanel value={value} index={6} dir={theme.direction}>
-                            <div class="row">
-                                {
-                                    data.some(item => item.category === "boshqalar")
-                                        ? data.filter(item => item.category === "boshqalar").map((sotuv, index) => {
-                                            return (
-                                                <BlogItem
-                                                    img={sotuv.img}
-                                                    title={sotuv.title}
-                                                    videoURL={sotuv.videoURL}
-                                                    videoTime={sotuv.videoTime}
-                                                />
-                                            )
-                                        })
-                                        : <Blognot />
-                                }
-                            </div>
-
-                        </TabPanel>
-                    </SwipeableViews>
-                </Box>
+                                    }
+                                </div>
+                            </TabPanel>
+                            <TabPanel value={value} index={1} dir={theme.direction}>
+                                <div className='row'>
+                                    {
+                                        data.some(item => item.category === "sotuv")
+                                            ? data.filter(item => item.category === "sotuv").map((sotuv, index) => {
+                                                return (
+                                                    <BlogItem
+                                                        img={sotuv.img}
+                                                        title={sotuv.title}
+                                                        videoURL={sotuv.videoURL}
+                                                        videoTime={sotuv.videoTime}
+                                                    />
+                                                )
+                                            })
+                                            : <Blognot />
+                                    }
+                                </div>
+                            </TabPanel>
+                            <TabPanel value={value} index={2} dir={theme.direction}>
+                                <div className='row'>
+                                    {
+                                        data.some(item => item.category === "marketing")
+                                            ? data.filter(item => item.category === "marketing").map((sotuv, index) => {
+                                                return (
+                                                    <BlogItem
+                                                        img={sotuv.img}
+                                                        title={sotuv.title}
+                                                        videoURL={sotuv.videoURL}
+                                                        videoTime={sotuv.videoTime}
+                                                    />
+                                                )
+                                            })
+                                            : <Blognot />
+                                    }
+                                </div>
+                            </TabPanel>
+                            <TabPanel value={value} index={3} dir={theme.direction}>
+                                <div class="row">
+                                    {
+                                        data.some(item => item.category === "brending")
+                                            ? data.filter(item => item.category === "brending").map((sotuv, index) => {
+                                                return (
+                                                    <BlogItem
+                                                        img={sotuv.img}
+                                                        title={sotuv.title}
+                                                        videoURL={sotuv.videoURL}
+                                                        videoTime={sotuv.videoTime}
+                                                    />
+                                                )
+                                            })
+                                            : <Blognot />
+                                    }
+                                </div>
+                            </TabPanel>
+                            <TabPanel value={value} index={4} dir={theme.direction}>
+                                <div class="row">
+                                    {
+                                        data.some(item => item.category === "it")
+                                            ? data.filter(item => item.category === "it").map((sotuv, index) => {
+                                                return (
+                                                    <BlogItem
+                                                        img={sotuv.img}
+                                                        title={sotuv.title}
+                                                        videoURL={sotuv.videoURL}
+                                                        videoTime={sotuv.videoTime}
+                                                    />
+                                                )
+                                            })
+                                            : <Blognot />
+                                    }
+                                </div>
+                            </TabPanel>
+                            <TabPanel value={value} index={5} dir={theme.direction}>
+                                <div class="row">
+                                    {
+                                        data.some(item => item.category === "menejment")
+                                            ? data.filter(item => item.category === "menejment").map((sotuv, index) => {
+                                                return (
+                                                    <BlogItem
+                                                        img={sotuv.img}
+                                                        title={sotuv.title}
+                                                        videoURL={sotuv.videoURL}
+                                                        videoTime={sotuv.videoTime}
+                                                    />
+                                                )
+                                            })
+                                            : <Blognot />
+                                    }
+                                </div>
+                            </TabPanel>
+                            <TabPanel value={value} index={6} dir={theme.direction}>
+                                <div class="row">
+                                    {
+                                        data.some(item => item.category === "boshqalar")
+                                            ? data.filter(item => item.category === "boshqalar").map((sotuv, index) => {
+                                                return (
+                                                    <BlogItem
+                                                        img={sotuv.img}
+                                                        title={sotuv.title}
+                                                        videoURL={sotuv.videoURL}
+                                                        videoTime={sotuv.videoTime}
+                                                    />
+                                                )
+                                            })
+                                            : <Blognot />
+                                    }
+                                </div>
+                            </TabPanel>
+                        </SwipeableViews>
+                    </Box>
+                </div>
             </div>
+            <Contact title="Yanada ko'p ma'lumot xohlaysizmi?" />
         </div>
     );
 }

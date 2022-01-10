@@ -156,7 +156,7 @@ const Footer = () => {
                             </div>
                             <div className='col-12 col-md-6 col-lg-3 mb-4 mb-lg-0'>
                                 <h5>TELEFON RAQAM</h5>
-                                <a href='tel: +998999943111'>+998 (99) 994-31-11</a>
+                                <a href='tel:+998999943111'>+998 (99) 994-31-11</a>
                             </div>
                             <div className='col-12 col-md-6 col-lg-3 mb-4 mb-lg-0'>
                                 <h5 >EMAIL</h5>
