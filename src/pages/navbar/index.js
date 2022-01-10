@@ -20,6 +20,7 @@ import { Link } from "react-router-dom"
 export default function NavbarMenu() {
 
     const [isOpen, setIsOpen] = useState(false);
+
     const toggle = () => {
         // debugger;
         setIsOpen(prev => !prev);
@@ -34,25 +35,25 @@ export default function NavbarMenu() {
             >
                 <div class="main-container">
                     <Link to="/" className="navbar-brand" >
-                        <img src="/assets/img/logo.png" alt="logo" className="logo_img" />
+                        <img data-aos="fade-right" data-aos-duration="2000" src="/assets/img/logo.png" alt="logo" className="logo_img" />
                     </Link>
                     <NavbarToggler onClick={toggle} />
                     <Collapse className="menu_list" navbar isOpen={isOpen}>
-                        <Nav navbar>
+                        <Nav data-aos="fade-right" data-aos-duration="2000" navbar>
                             <NavItem>
                                 <Link to="/portfolio">portfolio</Link>
                             </NavItem>
                             <NavItem>
-                                <Link to="/xizmatlar">xizmatlar</Link>
+                                <Link className="menu-link" to="/xizmatlar">xizmatlar</Link>
                             </NavItem>
                             <NavItem>
-                                <Link to="/blog">blog</Link>
+                                <Link className="menu-link" to="/blog">blog</Link>
                             </NavItem>
                             <NavItem>
-                                <Link to="/aloqa">a'loqa</Link>
+                                <Link className="menu-link" to="/aloqa">a'loqa</Link>
                             </NavItem>
                         </Nav>
-                        <div className="nav_contact">
+                        <div data-aos="fade-right" data-aos-duration="2000" className="nav_contact">
                             <div className="nav_contact__call">
                                 <img src="/assets/img/call.svg" />
                                 <p>

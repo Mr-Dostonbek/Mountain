@@ -9,9 +9,13 @@ import Contact from "./pages/contact";
 import Footer from "./pages/footer";
 import Home from "./pages/home";
 import "./styles/main.scss";
-import './App.css'
+import './App.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 function App() {
+
+  AOS.init();
 
   window.onload = function () {
     const el = document.getElementById('overlay');

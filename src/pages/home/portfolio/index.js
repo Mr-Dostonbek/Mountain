@@ -13,7 +13,7 @@ const Portfolio = () => {
 
                 <div className='row portfolio-title'>
                     <div className='col text-center m-4'>
-                        <h1>Portfolio</h1>
+                        <h1 data-aos="fade-right" data-aos-duration="2000">Portfolio</h1>
                     </div>
                 </div>
 

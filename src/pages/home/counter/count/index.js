@@ -6,7 +6,7 @@ import './style.scss';
 const CountOne = ({number, text}) => {
     return (
         <div className='col-12 col-sm-6 col-lg-3 mb-4'>
-            <div className='count_item'>
+            <div className='count_item' data-aos="fade-right" data-aos-duration="2000">
                 <div className='count_number'>
                 <CountUp start={0} end={`${number}`} duration={2} suffix=' +'>
                     {({ countUpRef, start }) => (

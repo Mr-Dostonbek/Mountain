@@ -9,7 +9,7 @@ const Main = () => {
             <div className='container'>
                 <div className='row'>
                     <div className='col'>
-                        <h1 className='banner_text'>
+                        <h1 data-aos="fade-right" data-aos-duration="2000" className='banner_text'>
                             <Typewriter
                                 options={{
                                     strings: ['Biznesingiz uchun kuchli brend, sotuvchi sayt, CRM va ERP platformalar yaratamiz'],
@@ -18,12 +18,12 @@ const Main = () => {
                                 }}
                             />
                         </h1>
-                        <p className='banner_description'>
+                        <p data-aos="fade-right" data-aos-duration="2000" className='banner_description'>
                             Brend bu - hissiyot. Sayt - yirik hajmdagi ma'lumotlarni oson taqdim qilish vositasi. Avtomatizatsiyasiz esa biznesni kengaytirish ilojsiz.
                         </p>
                         <div className='main_btn'>
-                            <Button bg="warning" text="portfolio" />
-                            <Button bg="primary" text="xizmat turlari" />
+                            <Button data-aos="fade-right" data-aos-duration="2000" bg="warning" text="portfolio" />
+                            <Button data-aos="fade-right" data-aos-duration="2000" bg="primary" text="xizmat turlari" />
                         </div>
                     </div>
                 </div>

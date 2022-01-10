@@ -1,0 +1,23 @@
+.blog_tabs{
+    padding-top: 150px;
+    background-color: #F7F7F7;
+    .blog-title{
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            font-size: 44px;
+            font-weight: 600;
+            color: #04165D;
+        }
+        ul{
+            list-style: circle;
+            li{
+                color: #04165D5C;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+    }
+}

@@ -17,13 +17,13 @@ const Contact = ({title}) => {
             <div className='container'>
                 <div className='row'>
                     <div className='col-12 col-lg-6'>
-                        <h1>{title}</h1>
-                        <p>Ma'lumotlaringizni qoldiring va biz tez orada siz bilan bog'lanamiz</p>
+                        <h1 data-aos="fade-right" data-aos-duration="2000">{title}</h1>
+                        <p data-aos="fade-right" data-aos-duration="2000">Ma'lumotlaringizni qoldiring va biz tez orada siz bilan bog'lanamiz</p>
                     </div>
                     <div className='col-12 col-lg-6'>
                         <div className='row'>
                             <div className='col-12'>
-                                <Box sx={{ '& > :not(style)': { m: 1 } }}>
+                                <Box data-aos="fade-right" data-aos-duration="2000" sx={{ '& > :not(style)': { m: 1 } }}>
                                     <FormControl sx={{
                                         width: 368,
                                         maxWidth: '100%',
@@ -43,7 +43,7 @@ const Contact = ({title}) => {
                                 </Box>
                             </div>
                             <div className='col-12'>
-                                <Box sx={{ '& > :not(style)': { m: 1 } }}>
+                                <Box data-aos="fade-right" data-aos-duration="2000" sx={{ '& > :not(style)': { m: 1 } }}>
                                     <FormControl sx={{
                                         width: 368,
                                         maxWidth: '100%',
@@ -64,12 +64,12 @@ const Contact = ({title}) => {
                                 </Box>
                             </div>
                             <div className='col-12'>
-                                <FormControlLabel
+                                <FormControlLabel data-aos="fade-right" data-aos-duration="2000"
                                     control={<Checkbox />}
                                     label="Tugmani bosish orqali siz bizning ma'lumotlaringizni ishlatish bo'yicha ofertamizga rozi bo'lgan bo'lasiz." />
                             </div>
                             <div className='col-12'>
-                                <button className='btn btn-warning'>Bepul Konsultatsiya</button>
+                                <button data-aos="fade-right" data-aos-duration="2000" className='btn btn-warning'>Bepul Konsultatsiya</button>
                             </div>
                         </div>
 

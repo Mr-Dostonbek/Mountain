@@ -2,18 +2,20 @@
     height: 400px;
     max-width: 100%;
     background-color: #F7F7F7;
+    margin-bottom: 50px;
 }
 .yandex-page{
-    padding-bottom: 50px !important;
     padding-left: 0;
     padding-right: 0;
     position: relative;
+    padding-bottom: 50px !important;
 }
 .map-desc{
+    max-width: 320px;
     position: absolute;
     top: 320px;
     left: 50px;
-    background-color: #F7F7F7;
+    background-color: #fff;
     padding: 40px;
     z-index: 99;
     h3, a{
