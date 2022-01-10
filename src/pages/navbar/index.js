@@ -39,7 +39,7 @@ export default function NavbarMenu() {
                     </Link>
                     <NavbarToggler onClick={toggle} />
                     <Collapse className="menu_list" navbar isOpen={isOpen}>
-                        <Nav navbar>
+                        <Nav data-aos="fade-right" data-aos-duration="2000" navbar>
                             <NavItem>
                                 <Link to="/portfolio">portfolio</Link>
                             </NavItem>
