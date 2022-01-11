@@ -1,18 +1,21 @@
-.contact_section{
+.contact_section {
     padding: 50px 0;
     background-color: #04165D;
-    h1{
+
+    h1 {
         font-size: 48px;
         color: #fff;
         font-weight: 600;
     }
-    p{
+
+    p {
         color: #FFFFFFB8;
         font-size: 20px;
         max-width: 392px;
         margin-top: 20px;
     }
-    .btn{
+
+    .btn {
         background-color: #FDC619;
         z-index: 1;
         position: relative;
@@ -28,33 +31,49 @@
         font-weight: 600;
         margin-top: 30px;
     }
-    
-    .MuiFormControl-root{
+
+    .MuiFormControl-root {
         margin-bottom: 20px !important;
     }
-    
-    .MuiSvgIcon-root, .MuiInputLabel-root{
+
+    .MuiSvgIcon-root,
+    .MuiInputLabel-root {
         color: #FFFFFFB8 !important;
     }
-    .MuiTypography-root{
+
+    .MuiTypography-root {
         color: #FFFFFFB8 !important;
         font-size: 16px !important;
         max-width: 300px;
     }
-    
-    .css-1480iag-MuiInputBase-root-MuiInput-root:before{
+
+    .css-1480iag-MuiInputBase-root-MuiInput-root:before {
         border-bottom-color: #FFFFFFB8 !important;
     }
-    
-    .css-1480iag-MuiInputBase-root-MuiInput-root:after{
+
+    .css-1480iag-MuiInputBase-root-MuiInput-root:after {
         border-bottom-color: #FDC619 !important;
     }
-    
-    #input-with-icon-adornment{
+
+    #input-with-icon-adornment {
         color: #FFFFFFB8 !important;
     }
-    
+
     .MuiInputAdornment-root svg {
         color: #FFFFFFB8 !important;
+    }
+}
+
+
+@media (max-width: 640px) {
+    .contact_section {
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 16px;
+        }
     }
 }

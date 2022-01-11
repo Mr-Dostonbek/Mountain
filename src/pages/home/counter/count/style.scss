@@ -1,19 +1,36 @@
-.count_item{
+.count_item {
     text-align: center;
     padding: 20px 20px;
     background-color: #fff;
     border-radius: 5px;
     color: #04165D;
-    .count_number{
+
+    .count_number {
         font-size: 70px;
         font-weight: 600;
         white-space: nowrap;
     }
-    .count_text{
-        h4{
+
+    .count_text {
+        h4 {
             font-size: 16px !important;
             text-transform: uppercase;
             font-weight: 600;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .count_item {
+        .count_number {
+            font-size: 44px;
+        }
+
+        .count_text {
+            h4 {
+                font-size: 14px !important;
+
+            }
         }
     }
 }

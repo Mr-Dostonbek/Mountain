@@ -20,4 +20,12 @@
 
 }
 
-
+@media (max-width: 640px) {
+    .portfolio_section{
+            .main-container{
+                h1{
+                    font-size: 34px
+                }
+            }
+    }
+}

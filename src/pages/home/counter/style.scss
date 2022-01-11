@@ -13,3 +13,17 @@
     }
 
 }
+
+@media (max-width: 640px) {
+    .counter {
+        .main-container {
+            padding-bottom: 40px;
+            padding-top: 40px;
+    
+            h1 {
+                font-size: 34px;
+            }
+        }
+    
+    }
+}

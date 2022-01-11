@@ -14,7 +14,7 @@ import ServicesItem3 from './servicesItem3';
 import ServicesItem4 from './servicesItem4';
 import ServicesItem5 from './servicesItem5';
 import AOS from 'aos';
-import 'aos/dist/aos.css'
+import 'aos/dist/aos.css';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -61,16 +61,21 @@ export default function FullWidthTabs() {
         setValue(index);
     };
 
-    
-  AOS.init();
+
+    AOS.init();
 
     return (
         <div className='services_tabs'>
             <div class="main-container">
+                <div className='row'>
+                    <div className='col'>
+                        <h1 className='services-title' data-aos="fade-right" data-aos-duration="2000">Xizmat turlari</h1>
+                    </div>
+                </div>
                 <Box sx={{ bgcolor: '#F7F7F7', width: '100%' }}>
                     <AppBar position="static">
                         <Tabs
-                             data-aos="fade-right" data-aos-duration="2000"
+                            data-aos="fade-right" data-aos-duration="2000"
                             value={value}
                             onChange={handleChange}
                             indicatorColor="secondary"

@@ -15,35 +15,43 @@ const Footer = () => {
                 <div className='col'>
                     <div className='footer_header'>
                         <div class="main-container">
-                            <img data-aos="fade-right" data-aos-duration="2000" className='footer_logo' src='./assets/img/logo.png' alt='logo' />
-                            <h1 data-aos="fade-right" data-aos-duration="2000">Halollik biznesdan ustun</h1>
-                            <ul className='footer_social_list'>
-                                <li className='footer_title social_item'>
-                                    <a href='#' data-aos="fade-right" data-aos-duration="2000">
-                                        <InstagramIcon />
-                                    </a>
-                                </li>
-                                <li className='social_item'>
-                                    <a href='#' data-aos="fade-right" data-aos-duration="2000">
-                                        <TelegramIcon />
-                                    </a>
-                                </li>
-                                <li className='social_item'>
-                                    <a href='#' data-aos="fade-right" data-aos-duration="2000">
-                                        <FacebookIcon />
-                                    </a>
-                                </li>
-                                <li className='social_item'>
-                                    <a href='#' data-aos="fade-right" data-aos-duration="2000">
-                                        <YoutubeIcon />
-                                    </a>
-                                </li>
-                                <li className='social_item'>
-                                    <a href='#' data-aos="fade-right" data-aos-duration="2000">
-                                        <BehanceIcon />
-                                    </a>
-                                </li>
-                            </ul>
+                            <div className="row text-center">
+                                <div className="col-12 col-lg-3">
+                                    <img data-aos="fade-right" data-aos-duration="2000" className='footer_logo mb-4 mb-lg-0' src='./assets/img/logo.png' alt='logo' />
+                                </div>
+                                <div className="col-12 col-lg-6">
+                                    <h1 className='text-center mb-4 mb-lg-0' data-aos="fade-right" data-aos-duration="2000">Halollik biznesdan ustun</h1>
+                                </div>
+                                <div className="col-12 col-lg-3">
+                                    <ul className='footer_social_list text-center'>
+                                        <li className='footer_title social_item'>
+                                            <a href='#' data-aos="fade-right" data-aos-duration="2000">
+                                                <InstagramIcon />
+                                            </a>
+                                        </li>
+                                        <li className='social_item'>
+                                            <a href='#' data-aos="fade-right" data-aos-duration="2000">
+                                                <TelegramIcon />
+                                            </a>
+                                        </li>
+                                        <li className='social_item'>
+                                            <a href='#' data-aos="fade-right" data-aos-duration="2000">
+                                                <FacebookIcon />
+                                            </a>
+                                        </li>
+                                        <li className='social_item'>
+                                            <a href='#' data-aos="fade-right" data-aos-duration="2000">
+                                                <YoutubeIcon />
+                                            </a>
+                                        </li>
+                                        <li className='social_item'>
+                                            <a href='#' data-aos="fade-right" data-aos-duration="2000">
+                                                <BehanceIcon />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
