@@ -4,7 +4,7 @@ import './style.scss';
 const BlogItem = (data) => {
     return (
         <div className='col col-sm-6 col-md-4 mb-4 blog-card'>
-            <div className='card'>
+            <div className='card' data-aos="fade-right" data-aos-duration="2000">
                 <div className='card-img'>
                     <a href={data.videoURL}>
                         <img src={data.img} alt="card-img" />

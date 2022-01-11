@@ -23,7 +23,7 @@ const Footer = () => {
                                     <h1 className='text-center mb-4 mb-lg-0' data-aos="fade-right" data-aos-duration="2000">Halollik biznesdan ustun</h1>
                                 </div>
                                 <div className="col-12 col-lg-3">
-                                    <ul className='footer_social_list text-center'>
+                                    <ul className='footer_social_list'>
                                         <li className='footer_title social_item'>
                                             <a href='#' data-aos="fade-right" data-aos-duration="2000">
                                                 <InstagramIcon />

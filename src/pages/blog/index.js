@@ -129,6 +129,30 @@ const data = [
     },
     {
         id: 15,
+        category: "marketing",
+        img: './assets/img/Blog/sotuv-3.png',
+        title: "Samarali haq to'lash haqida bilasizmi?",
+        videoTime: "00:01:07",
+        videoURL: "https://www.youtube.com/watch?v=eFM03KuSzKc"
+    },
+    {
+        id: 16,
+        category: "marketing",
+        img: './assets/img/Blog/sotuv-3.png',
+        title: "Samarali haq to'lash haqida bilasizmi?",
+        videoTime: "00:01:07",
+        videoURL: "https://www.youtube.com/watch?v=eFM03KuSzKc"
+    },
+    {
+        id: 17,
+        category: "marketing",
+        img: './assets/img/Blog/menejment-2.png',
+        title: "Samarali haq to'lash haqida bilasizmi?",
+        videoTime: "00:01:07",
+        videoURL: "https://www.youtube.com/watch?v=eFM03KuSzKc"
+    },
+    {
+        id: 18,
         category: "boshqalar",
         img: './assets/img/Blog/boshqalar-1.png',
         title: "Biznesda qilgan eng katta xatolarim",
@@ -136,7 +160,7 @@ const data = [
         videoURL: "https://www.youtube.com/watch?v=eFM03KuSzKc"
     },
     {
-        id: 16,
+        id: 19,
         category: "boshqalar",
         img: './assets/img/Blog/boshqalar-2.png',
         title: "Biznes muvaffaqiyatining kaliti nimada?",
@@ -144,15 +168,15 @@ const data = [
         videoURL: "https://www.youtube.com/watch?v=eFM03KuSzKc"
     },
     {
-        id: 17,
-        category: "boshqalar",
+        id: 20,
+        category: "marketing",
         img: './assets/img/Blog/boshqalar-3.png',
         title: "Biznesda yetishmovchilikning oxiri bormi?",
         videoTime: "00:01:32",
         videoURL: "https://www.youtube.com/watch?v=eFM03KuSzKc"
     },
     {
-        id: 18,
+        id: 21,
         category: "boshqalar",
         img: './assets/img/Blog/boshqalar-4.png',
         title: "Tadbirkor uchun zaruriy ko'nikmalar",
@@ -160,7 +184,7 @@ const data = [
         videoURL: "https://www.youtube.com/watch?v=eFM03KuSzKc"
     },
     {
-        id: 19,
+        id: 22,
         category: "boshqalar",
         img: './assets/img/Blog/boshqalar-5.png',
         title: "Tadborkorlar tomonidan yo'q qo'yilayotgan asosiy xatoliklar",
@@ -168,7 +192,7 @@ const data = [
         videoURL: "https://www.youtube.com/watch?v=eFM03KuSzKc"
     },
     {
-        id: 20,
+        id: 23,
         category: "boshqalar",
         img: './assets/img/Blog/boshqalar-6.png',
         title: "Narx raqobatidan qutilish mumkinmi?",
