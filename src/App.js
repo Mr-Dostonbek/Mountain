@@ -12,6 +12,7 @@ import "./styles/main.scss";
 import './App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import Modal from "./pages/modal";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <Modal />
       <div id="overlay">
         <img id="overlay-img" src="./assets/img/logo.png" alt="logo" />
       </div>

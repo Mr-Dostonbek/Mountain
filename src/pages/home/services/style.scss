@@ -4,13 +4,13 @@
     color: rgba(0, 0, 0, 0.5) !important;
 }
 .MuiTabs-indicator{
-    background-color: #FDC619 !important;
+    background-color: #f7e018 !important;
 }
 .MuiButtonBase-root{
     font-weight: 600 !important;
 }
 .MuiTab-textColorInherit{
-    color: #04165D !important;
+    color: #000000 !important;
 }
 
 .services_tabs{
@@ -29,7 +29,7 @@
     // padding: 70px 30px;
     h1{
         font-size: 40px;
-        color: #04165D;
+        color: #000000;
         font-weight: 600;
     }
     .title_line{
@@ -48,10 +48,19 @@
         text-transform: uppercase;
         font-weight: 600;
         font-size: 14px;
-        color: #04165D;
-        background-color: #E8E9ED;
-        padding: 10px 20px;
+        color: #000000;
+        background-color: #fff;
+        border-color: #f7e018;
+            transition: all 0.5s ease-in-out;
+            padding: 10px 20px;
         margin-top: 30px;
+        &:hover {
+            background-color: #000000;
+            color: #f7e018;
+            border-color: #000000;
+            transition: all 0.5s ease-in-out;
+            box-shadow: 0 0 10px #000000;
+        }
     }
 }
 

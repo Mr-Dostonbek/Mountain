@@ -10,13 +10,15 @@
         border-right: none;
 
         .main-container {
-            display: flex;
+            
+            padding-bottom: 35px;
+            padding-top: 35px;
+            margin:  0 auto;
+            .row{
+                display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            padding-bottom: 35px;
-            padding-top: 35px;
-
             img {
                 max-width: 170px;
             }
@@ -46,6 +48,7 @@
                         font-size: 15px;
                     }
                 }
+            }
             }
         }
     }

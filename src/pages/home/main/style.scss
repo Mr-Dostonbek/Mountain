@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #04156D;
+    background-color: #000000;
     padding: 220px 0 90px 0;
 
     .banner_text {
@@ -31,12 +31,11 @@
 .btn {
     position: relative;
     padding: 15px 20px;
-    border-radius: 5px;
+    border: 3px solid #f7e018;
     color: #fff;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
-    border: none;
 
     &:focus {
         outline: none;
@@ -55,30 +54,52 @@
 }
 
 .btn-warning {
-    background-color: #FDC619;
+    transition: all 0.5s ease-in-out;
+    background-color: #f7e018;
+
+    &:hover {
+        background-color: #f7e018;
+        color: #000000;
+        transition: all 0.5s ease-in-out;
+        box-shadow: 0 0 10px #f7e018;
+    }
 }
 
 .btn-primary {
     margin-left: 15px;
     --tw-bg-opacity: 0.06;
+    transition: all 0.5s ease-in-out;
+    border: 3px solid #f7e018;
     background-color: #FFFFFF0F;
+
+    &:hover {
+        transition: all 0.5s ease-in-out;
+        border: 3px solid #f7e018;
+        box-shadow: 0 0 10px #f7e018;
+        background-color: #f7e018;
+        color: #000000;
+    }
 }
 
 @media (max-width: 640px) {
     .main_section {
         padding-top: 180px;
         padding-bottom: 70px;
+
         .banner_text {
             font-size: 37px;
         }
-        .banner_description{
+
+        .banner_description {
             font-size: 1rem;
         }
-        .main_btn{
-            .btn{
+
+        .main_btn {
+            .btn {
                 display: block;
             }
-            .btn-primary{
+
+            .btn-primary {
                 margin-left: 0;
                 margin-top: 20px;
             }

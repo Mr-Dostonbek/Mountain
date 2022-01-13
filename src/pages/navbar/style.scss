@@ -4,7 +4,7 @@
     right: 0;
     left: 0;
     padding: 32px 0 !important;
-    background-color: #fff;
+    background-color: #f7e018;
     z-index: 99999;
     .main-container{
         display: flex !important;
@@ -28,12 +28,12 @@
                 text-transform: uppercase;
                 a{
                     text-decoration: none;
-                    color: #04165D;
+                    color: #000000;
                     padding: 5px 4px;
                     margin: 0 7px;
                     font-weight: 600;
                     &::selection{
-                        border-bottom: 2px solid #04165D;
+                        border-bottom: 2px solid #000000;
                         color: #fff;
                     }
                     
@@ -43,7 +43,7 @@
         .dropdown{
             list-style: none;
                 .nav-link{
-                    color: black !important;
+                    color: #000000 !important;
                     font-weight: 600;
                 }
         }
@@ -68,7 +68,7 @@
                 p{
                     white-space: nowrap;
                     margin: 20px 0;
-                    color: #04165D;
+                    color: #000000;
                     font-weight: 600;
                 }
             }
@@ -83,7 +83,7 @@
             left: 0;
             top: 70px;
             padding: 30px;
-            background-color: #fff;
+            background-color: #f7e018;
         }
     }
 }

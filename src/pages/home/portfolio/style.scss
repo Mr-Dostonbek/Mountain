@@ -1,20 +1,28 @@
 .portfolio_section{
-    background-color: #F7F7F7;
+    background-color: #f7e018;
     .main-container{
         padding-top: 40px;
         padding-bottom: 40px;
         h1{
-            color: #06146D;
+            color: #000000;
         }
         .btn-portfolio{
-            background-color: #E8E9ED;
-            color: #06146D;
+            background-color: #fff;
+            color: #000000;
+            border-color: #000000;
             font-size: 15px;
             font-weight: 700;
             padding: 10px 25px;
             margin-top: 20px;
             text-transform: uppercase;
-            font-variant: small-caps;
+                transition: all 0.5s ease-in-out;
+                font-variant: small-caps;
+            &:hover {
+                color: #f7e018;
+                background-color: #000000;
+            box-shadow: 0 0 10px #000000;
+            transition: all 0.5s ease-in-out;
+            }
         }
     }
 
