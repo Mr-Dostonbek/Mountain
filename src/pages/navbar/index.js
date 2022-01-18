@@ -19,6 +19,8 @@ import { Link } from "react-router-dom"
 
 export default function NavbarMenu() {
 
+    // const [t, i18n] = useTranslation('common');
+
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => {
@@ -35,7 +37,7 @@ export default function NavbarMenu() {
             >
                 <div class="main-container">
                     <Link to="/" className="navbar-brand" >
-                        <img data-aos="fade-right" data-aos-duration="2000" src="/assets/img/logo.png" alt="logo" className="logo_img" />
+                        <img data-aos="fade-right" data-aos-duration="2000" src="/assets/img/logo-if.jpg" alt="logo" className="logo_img" />
                     </Link>
                     <NavbarToggler onClick={toggle} />
                     <Collapse className="menu_list" navbar isOpen={isOpen}>

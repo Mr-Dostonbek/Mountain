@@ -27,7 +27,7 @@ function App() {
     <BrowserRouter>
       <Modal />
       <div id="overlay">
-        <img id="overlay-img" src="./assets/img/logo.png" alt="logo" />
+        <img id="overlay-img" src="./assets/img/logo-if.jpg" alt="logo" />
       </div>
       <Navbar />
       <Routes>

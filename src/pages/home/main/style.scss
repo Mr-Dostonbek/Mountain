@@ -1,16 +1,19 @@
 .main_section {
+    position: relative;
     max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #000000;
+    // background-color: #000000;
+    background-color: #fff;
     padding: 220px 0 90px 0;
+    overflow: hidden;
 
     .banner_text {
         font-size: 60px;
         line-height: 1.2;
         font-weight: 600;
-        color: #fff;
+        color: #000000;
         min-height: 234px;
         max-width: 910px;
         font-family: 'Montserrat', sans-serif;
@@ -20,7 +23,7 @@
         max-width: 682px;
         font-size: 1.125rem;
         line-height: 1.75rem;
-        color: #fff;
+        color: #000000;
     }
 
     .main_btn {
@@ -31,8 +34,8 @@
 .btn {
     position: relative;
     padding: 15px 20px;
-    border: 3px solid #f7e018;
-    color: #fff;
+    // border: 3px solid #f7e018;
+    color: #000000;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
@@ -58,8 +61,9 @@
     background-color: #f7e018;
 
     &:hover {
-        background-color: #f7e018;
-        color: #000000;
+        background: linear-gradient(90deg, rgba(47, 128, 237, 0.8) -2.41%, rgba(188, 58, 128, 0.8) 99.99%, rgba(255, 255, 0, 0) 100%);
+        // background-color: #f7e018;
+        border-image: linear-gradient(90deg, rgba(47, 128, 237, 0.8) -2.41%, rgba(188, 58, 128, 0.8) 99.99%, rgba(255, 255, 0, 0) 100%);
         transition: all 0.5s ease-in-out;
         box-shadow: 0 0 10px #f7e018;
     }
@@ -74,9 +78,11 @@
 
     &:hover {
         transition: all 0.5s ease-in-out;
-        border: 3px solid #f7e018;
+        // border: 3px solid #f7e018;
+        border-image: linear-gradient(90deg, rgba(47, 128, 237, 0.8) -2.41%, rgba(188, 58, 128, 0.8) 99.99%, rgba(255, 255, 0, 0) 100%);
         box-shadow: 0 0 10px #f7e018;
-        background-color: #f7e018;
+        // background-color: #f7e018;
+        background: linear-gradient(90deg, rgba(47, 128, 237, 0.8) -2.41%, rgba(188, 58, 128, 0.8) 99.99%, rgba(255, 255, 0, 0) 100%);
         color: #000000;
     }
 }
