@@ -22,8 +22,8 @@ const Home = () => {
                     <img src='../assets/img/call.svg' alt='call-phone' />
                 </div>
                 <Main />
-                <Counter />
                 <Portfolio />
+                <Counter />
                 <Services />
                 <Clients />
                 <Contact title="Keling, loyihangiz haqida gaplashamiz" />
